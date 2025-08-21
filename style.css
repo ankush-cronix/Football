@@ -10,6 +10,9 @@ a
 {
     text-decoration: none;
 }
+ul{
+    min-height: fit-content !important;
+}
 ul li
 {
     list-style: none;
@@ -24,12 +27,50 @@ ul li
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
+    position: fixed;
+    width: 80%;
+      animation: scroll-transtion;
+    animation-timeline: scroll(y);
+   
 }
+
+@keyframes scroll-transtion
+{
+    0%
+    {
+        background-color:transparent;
+    }
+    30%
+    {
+        background-color: #d30b0b8e;
+        color: #fff;
+    }
+    60%
+    {
+        background-color: #d30b0b8e;
+    }
+     80%
+    {
+        background-color: #d30b0b8e;
+    }
+     100%
+    {
+        background-color: #d30b0b8e;
+    }
+}
+.navbar
+{
+  
+    padding: 10px;
+}
+
 nav ul li 
 {
     display: inline-block;
     margin-right: 20px;
+  
+
 }
 nav ul li a
 {
@@ -292,7 +333,7 @@ footer .footer-col-3,.footer-col-4
     width: 100%;
     overflow: hidden;
     text-align: end;
-    transition: max-height 0.5s;
+    transition:  0.5s;
 }
 .Headers .row
 {
